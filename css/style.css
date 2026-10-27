@@ -19,15 +19,10 @@
     --corpo-2: 20px;
     --corpo-3: 40px;
 
-    /* Testi schermi medi */
-    --corpo-4: 16px;
-    --corpo-5: 18px;
-    --corpo-6: 38px;
-
     /* Testi schermi piccoli */
-    --corpo-7: 14px;
-    --corpo-5: 16px;
-    --corpo-6: 36px;
+    --corpo-4: 12px;
+    --corpo-5: 14px;
+    --corpo-6: 34px;
 }
 
 * {
@@ -104,7 +99,8 @@ h1 {
 }
 
 .contenuto p {
-    margin: 10px;
+    margin-top: var(--spazio-2);
+    margin-bottom: var(--spazio-2);
 }
 
 img {
@@ -140,10 +136,10 @@ a:hover {
 }
 
 
-/* - - - - Parte schermi medi 720px - - - - */
+/* - - - - Parte schermi piccoli 640px - - - - */
 
 
-@media (max-width: 45em) {
+@media (max-width: 40em) {
 
   body, footer {
     font-size: var(--corpo-4);
@@ -153,44 +149,16 @@ a:hover {
     font-size: var(--corpo-5);
   }
 
-    h1 {
+  h1 {
     font-size: var(--corpo-6);
   }
 
   img {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .orologio {
-    max-width: 50%;
-  }
-
-}
-
-
-/* - - - - Parte schermi piccoli 360px - - - - */
-
-
-@media (max-width: 22.5em) {
-
-  body, footer {
-    font-size: var(--corpo-7);
-  }
-
-  header, .nome-sito {
-    font-size: var(--corpo-8);
-  }
-
-  h1 {
-    font-size: var(--corpo-9);
-  }
-
-  img {
-    max-width: 70%;
-  }
-
-  .orologio {
-    max-width: 20%;
+    max-width: 35%;
   }
 
 }
