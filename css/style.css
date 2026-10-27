@@ -1,0 +1,196 @@
+:root {
+    /* Colori */
+    --testo: rgb(50, 50, 50);
+    --testo-secondario: rgb(100, 100, 100);
+
+    --sfondo-superiore: rgb(255, 255, 250);
+    --sfondo-titolo: rgb(110, 140, 70);
+    --sfondo-centrale: rgba(210, 220, 200);    
+    --sfondo-riquadri: rgba(255, 255, 255, 0.25);
+    --sfondo-inferiore: rgb(45, 60, 15);
+
+    /* Spaziatura */
+    --spazio-1: 10px;
+    --spazio-2: 20px;
+    --spazio-3: 30px;
+
+    /* Testi schermi grandi */
+    --corpo-1: 18px;
+    --corpo-2: 20px;
+    --corpo-3: 40px;
+
+    /* Testi schermi medi */
+    --corpo-4: 16px;
+    --corpo-5: 18px;
+    --corpo-6: 38px;
+
+    /* Testi schermi piccoli */
+    --corpo-7: 14px;
+    --corpo-5: 16px;
+    --corpo-6: 36px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--corpo-1);
+    line-height: 1.25;
+    color: var(--testo);
+    background: var(--sfondo-centrale);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+.contenitore {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header, section, footer {
+    padding-inline: var(--spazio-3);
+}
+
+header .contenitore, footer .contenitore {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--spazio-2);
+}
+
+
+/* - - - - Parte superiore del sito - - - - */
+
+
+header {
+    background: var(--sfondo-superiore);
+    font-size: var(--corpo-2);
+}
+
+.nome-sito {
+    font-weight: bold;
+    font-size: var(--corpo-2);
+    text-transform: uppercase;    
+}
+
+.fonte {
+    color: var(--testo-secondario);
+}
+
+
+/* - - - - Parte centrale del sito - - - - */
+
+
+.apertura {
+    background: var(--sfondo-titolo);
+}
+
+.contenuto .contenitore {
+    background-color: var(--sfondo-riquadri);
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 50px 50px 50px
+}
+
+h1 {
+    font-weight: bold;
+    font-size: var(--corpo-3);
+    text-align: center;
+    padding: var(--spazio-1);
+}
+
+.contenuto p {
+    margin: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.orologio {
+    max-width: 60%;
+}
+
+
+/* - - - - Parte inferiore del sito - - - - */
+
+
+footer {
+    background: var(--sfondo-inferiore);
+    font-size: var(--corpo-1);
+}
+
+footer p {
+    font-weight: bold;
+    color: var(--sfondo-centrale);
+}
+
+a {
+    color: var(--sfondo-centrale);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* - - - - Parte schermi medi 720px - - - - */
+
+
+@media (max-width: 45em) {
+
+  body, footer {
+    font-size: var(--corpo-4);
+  }
+
+  header, .nome-sito {
+    font-size: var(--corpo-5);
+  }
+
+    h1 {
+    font-size: var(--corpo-6);
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  .orologio {
+    max-width: 50%;
+  }
+
+}
+
+
+/* - - - - Parte schermi piccoli 360px - - - - */
+
+
+@media (max-width: 22.5em) {
+
+  body, footer {
+    font-size: var(--corpo-7);
+  }
+
+  header, .nome-sito {
+    font-size: var(--corpo-8);
+  }
+
+  h1 {
+    font-size: var(--corpo-9);
+  }
+
+  img {
+    max-width: 70%;
+  }
+
+  .orologio {
+    max-width: 20%;
+  }
+
+}
