@@ -12,7 +12,7 @@
     /* Spaziatura */
     --spazio-1: 10px;
     --spazio-2: 20px;
-    --spazio-3: 30px;
+    --spazio-3: 40px;
 
     /* Testi schermi grandi */
     --corpo-1: 18px;
@@ -20,9 +20,9 @@
     --corpo-3: 40px;
 
     /* Testi schermi piccoli */
-    --corpo-4: 12px;
-    --corpo-5: 14px;
-    --corpo-6: 34px;
+    --corpo-4: 13px;
+    --corpo-5: 15px;
+    --corpo-6: 35px;
 }
 
 * {
@@ -47,7 +47,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 
 header, section, footer {
-    padding-inline: var(--spazio-3);
+    padding-inline: var(--spazio-2);
 }
 
 header .contenitore, footer .contenitore {
@@ -62,13 +62,13 @@ header .contenitore, footer .contenitore {
 
 header {
     background: var(--sfondo-superiore);
-    font-size: var(--corpo-2);
 }
 
 .nome-sito {
     font-weight: bold;
     font-size: var(--corpo-2);
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    margin-right: var(--spazio-2);
 }
 
 .fonte {
@@ -85,22 +85,17 @@ header {
 
 .contenuto .contenitore {
     background-color: var(--sfondo-riquadri);
-    border-radius: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 50px 50px 50px
+    border-radius: var(--spazio-3);
+    margin-top: var(--spazio-3);
+    margin-bottom: var(--spazio-3);
+    padding: var(--spazio-3);
 }
 
 h1 {
     font-weight: bold;
     font-size: var(--corpo-3);
     text-align: center;
-    padding: var(--spazio-1);
-}
-
-.contenuto p {
-    margin-top: var(--spazio-2);
-    margin-bottom: var(--spazio-2);
+    padding: var(--spazio-2);
 }
 
 img {
@@ -108,8 +103,21 @@ img {
     max-width: 100%;
 }
 
+.podio {
+    margin-bottom: var(--spazio-2);
+}
+
+.schermata {
+    margin-top: var(--spazio-2);
+    margin-bottom: var(--spazio-2);
+}
+
+.generatore {
+    margin-top: var(--spazio-2);
+}
+
 .orologio {
-    max-width: 60%;
+    margin-bottom: var(--spazio-2);
 }
 
 
@@ -135,6 +143,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.info {
+    margin-left: var(--spazio-2);
+}
+
 
 /* - - - - Parte schermi piccoli 640px - - - - */
 
@@ -153,8 +165,16 @@ a:hover {
     font-size: var(--corpo-6);
   }
 
+  .contenuto .contenitore {
+    background-color: var(--sfondo-riquadri);
+    border-radius: var(--spazio-2);
+    margin-top: var(--spazio-2);
+    margin-bottom: var(--spazio-2);
+    padding: var(--spazio-2);
+  }
+
   img {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .orologio {
