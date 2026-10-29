@@ -20,9 +20,9 @@
     --corpo-3: 40px;
 
     /* Testi schermi piccoli */
-    --corpo-4: 13px;
-    --corpo-5: 15px;
-    --corpo-6: 35px;
+    --corpo-4: 12px;
+    --corpo-5: 14px;
+    --corpo-6: 34px;
 }
 
 * {
@@ -32,7 +32,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: var(--corpo-1);
-    line-height: 1.25;
+    line-height: 1.5;
     color: var(--testo);
     background: var(--sfondo-centrale);
 }
@@ -131,11 +131,11 @@ footer {
 
 footer p {
     font-weight: bold;
-    color: var(--sfondo-centrale);
+    color: var(--sfondo-superiore);
 }
 
 a {
-    color: var(--sfondo-centrale);
+    color: var(--sfondo-superiore);
     text-decoration: none;
 }
 
