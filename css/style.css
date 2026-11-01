@@ -14,15 +14,11 @@
     --spazio-2: 20px;
     --spazio-3: 40px;
 
-    /* Testi schermi grandi */
+    /* Testo per schermi grandi */
     --corpo-1: 18px;
-    --corpo-2: 20px;
-    --corpo-3: 40px;
 
-    /* Testi schermi piccoli */
-    --corpo-4: 12px;
-    --corpo-5: 14px;
-    --corpo-6: 34px;
+    /* Testo per schermi piccoli */
+    --corpo-2: 12px;
 }
 
 * {
@@ -66,7 +62,6 @@ header {
 
 .nome-sito {
     font-weight: bold;
-    font-size: var(--corpo-2);
     text-transform: uppercase;
     margin-right: var(--spazio-2);
 }
@@ -93,18 +88,18 @@ header {
 
 h1 {
     font-weight: bold;
-    font-size: var(--corpo-3);
     text-align: center;
     padding: var(--spazio-2);
 }
 
 img {
     display: block;
+    margin: auto;
     max-width: 100%;
 }
 
 .podio {
-    margin-bottom: var(--spazio-2);
+    margin-top: var(--spazio-2);
 }
 
 .schermata {
@@ -117,7 +112,7 @@ img {
 }
 
 .orologio {
-    margin-bottom: var(--spazio-2);
+    margin-top: var(--spazio-2);
 }
 
 
@@ -126,7 +121,6 @@ img {
 
 footer {
     background: var(--sfondo-inferiore);
-    font-size: var(--corpo-1);
 }
 
 footer p {
@@ -153,16 +147,12 @@ a:hover {
 
 @media (max-width: 40em) {
 
-  body, footer {
-    font-size: var(--corpo-4);
-  }
-
-  header, .nome-sito {
-    font-size: var(--corpo-5);
+  body, header, footer {
+    font-size: var(--corpo-2);
   }
 
   h1 {
-    font-size: var(--corpo-6);
+    padding: var(--spazio-1);
   }
 
   .contenuto .contenitore {
@@ -173,12 +163,16 @@ a:hover {
     padding: var(--spazio-2);
   }
 
-  img {
+  .generatore, .schermata {
+    max-width: 80%;
+  }
+
+  .podio {
     max-width: 70%;
   }
 
   .orologio {
-    max-width: 35%;
+    max-width: 40%;
   }
 
 }
