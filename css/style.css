@@ -25,8 +25,15 @@
     box-sizing: border-box;
 }
 
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Montserrat", sans-serif;
     font-size: var(--corpo-1);
     line-height: 1.5;
     color: var(--testo);
